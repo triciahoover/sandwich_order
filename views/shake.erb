@@ -1,0 +1,9 @@
+What type of shake would you like with that <%= sandwich %> sandwich and <%= side %>?
+
+
+<form method="post" action="/shake_choice">
+	<input type="text" name="shake">
+	<input type="text" name = "sandwich" value = <%= sandwich %> hidden>
+	<input type="text" name = "side" value = <%= side %> hidden>	
+	<input type="submit">
+</form>

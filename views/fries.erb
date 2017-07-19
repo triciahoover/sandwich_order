@@ -1,0 +1,8 @@
+Would you like fries with that <%= sandwich %> sandwich?
+
+
+<form method="post" action="/fries_choice">
+	<input type="text" name="fries">
+	<input type="text" name = "sandwich" value = <%= sandwich %> hidden>
+	<input type="submit">
+</form>

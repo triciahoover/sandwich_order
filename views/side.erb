@@ -1,0 +1,8 @@
+What type of side would you like with that <%= sandwich %> sandwich?
+
+
+<form method="post" action="/side_choice">
+	<input type="text" name="side">
+	<input type="text" name = "sandwich" value = <%= sandwich %> hidden>
+	<input type="submit">
+</form>
