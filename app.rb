@@ -20,8 +20,9 @@ end
 
 post '/fries_choice' do
 	sandwich = params[:sandwich]
-	fries = params[:fries]
-	if fries == "yes"
+	fries = params[:yes]
+	no_fries = params[:no]
+	if params[:yes] = 'yes'
 		side = "fries"
 		redirect '/shake?sandwich=' + sandwich + '&side=' + side
 	else

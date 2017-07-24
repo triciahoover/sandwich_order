@@ -1,8 +1,13 @@
-What type of side would you like with that <%= sandwich %> sandwich?
+<link href="/css/sides.css" rel="stylesheet">
 
+<p> 
+What type of side would you like with that <%= sandwich %> sandwich?
+</p>
 
 <form method="post" action="/side_choice">
 	<input type="text" name="side">
 	<input type="text" name = "sandwich" value = <%= sandwich %> hidden>
+	<br>
+	<br>
 	<input type="submit">
 </form>

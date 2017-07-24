@@ -1,8 +1,14 @@
+<p>
 Would you like fries with that <%= sandwich %> sandwich?
-
+</p>
 
 <form method="post" action="/fries_choice">
-	<input type="text" name="fries">
+	<label for="yes">Yes</label>
+	<input type="radio" name="fries" id="yes" value="yes"/>
+	<label for="no">No</label>
+	<input type="radio" name="fries" id="no" value="no" />
 	<input type="text" name = "sandwich" value = <%= sandwich %> hidden>
+	<br>
+	<br>
 	<input type="submit">
 </form>

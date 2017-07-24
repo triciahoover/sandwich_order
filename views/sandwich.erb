@@ -1,6 +1,33 @@
-Hello! What kind of sandwich would you like? Just don't choose Roast Beef!
+<script src="/js/getdate.js">
+</script>
+
+<p> This is the date that the page loads </p>
+
+<p id="dateonload">  </p>
+
+<p> 
+Hello! What kind of sandwich would you like?
+</p>
 
 <form method="post" action="sandwich_choice">
 	<input type="text" name="sandwich">
+	<br>
+	<br>
 	<input type="submit">
 </form>
+
+<p id="date"> </p>
+
+<button type="button" onclick="getOrderDate('date')">
+	Click here to Show the Date and Time
+</button>
+
+<p color=red font-size=12>	This is the date we push the button </p>
+
+<script>
+	window.onload=getOrderDate('dateonload');
+</script>
+
+
+
+

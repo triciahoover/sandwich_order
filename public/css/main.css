@@ -1,0 +1,35 @@
+body {
+	color: blue;
+	background-image: url(/../images/grey_background.jpg);
+	font-size: 20;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p {
+  	color: red;
+  	font-size: 18;
+}
+
+footer {
+  	border-top: solid;
+  	border-color: hotpink;
+  	text-align: center;
+  	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 30%;
+}
+
+.footer-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.center-body {
+	/*position: absolute;
+	top: 25%;
+	transform: translateX(90%);
+	text-align: center;*/
+}
